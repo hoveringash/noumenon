@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href=".\css\index.css">
+    <title>market — noumenon</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+</head>
+
+<body>
+
+    <header id="sectiontop">
+        <div class="logo"><a href="index.html">noumenon</a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html#section1">о галерее</a></li>
+                <li><a href="artists.html">художники</a></li>
+                <li><a href="exhibitions.html">выставки</a></li>
+                <li><a href="market.html">маркет</a></li>
+                <li><a class="active" href="contacts.html">контакты</a></li>
+                <li>
+                    <a href="https://t.me/noumenon_gallery" class="tooltip" target="_blank" rel="noopener noreferrer">
+                        <span class="tooltip-text">бесплатные билеты в нашем Telegram</span>
+                        <img class="icon" src="./images/favicon.png" alt="icon">
+                    </a>
+                </li>
+            </ul>  
+        </nav>
+    </header>
+
+    <hr class="header-line">
+
+    <div class="container" id="section1">
+    <img id="mapImage" src="images/map.png" alt="Маршрут на карте">
+        <div class="about-text">
+            <h2>Как к нам добраться</h2>
+            <p>Адрес, по которому вы можете посетить проходящие сейчас выставки: город Москва, улица Профсоюзная, дом 33к4.</p>
+            <p>Вы можете воспользоваться метро и доехать до станции "Новые Черемушки". Вам необходимо выйти из выхода номер 7 и пройти пешком примерно 5 минут.</p>
+            <button class="contacts-btn" id="openMapBtn">⇦ Увеличить карту</button>
+        </div>
+    </div>
+
+    <div id="mapModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="mapFullscreen">
+    </div>
+
+    <div class="container" id="section2">
+        <div class="about-text">
+            <h2>Открытый документооборот</h2>
+            <p>В галерее Noumenon открытый документооборот отражает нашу философию прозрачности и сотрудничества. Он позволяет художникам, кураторам и партнёрам безопасно обмениваться материалами, быстро согласовывать проекты и сохранять авторские права. Благодаря этому Noumenon становится не просто выставочным пространством, а платформой для совместного творчества.</p>
+            <a href="passport.html"><button class="contacts-btn">Перейти к документам</button></a>
+        </div>
+        <img src="images/docs.png" alt="Галерея">
+    </div>
+
+    <div class="floating-nav">
+        <div class="nav-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M16.24 7.76l-2.12 6.36-6.36 2.12 2.12-6.36 6.36-2.12z"></path>
+            </svg>
+        </div>
+        <div class="nav-content">
+            <ul>
+                <li><a href="#section1">Как к нам добраться</a></li>
+                <li><a href="#section2">Открытый документооборот</a></li>
+                <li><a href="#sectiontop">⇧ Вверх ⇧ </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <hr class="footer-line">
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="logo"><a href="index.html">&copy; noumenon</a></div>
+            <p>Сайт вляется учебным проектом и не претендует на авторские права используемых материалов</p>
+        </div>
+    </footer>
+    
+    <script src="js/mapModal.js"></script>
+
+</body>
+
+</html>

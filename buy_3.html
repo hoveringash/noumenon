@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href=".\css\index.css">
+  <title>market — noumenon</title>
+  <link rel="icon" type="image/png" href="./images/favicon.png">
+</head>
+
+<body>
+
+<header id="sectiontop">
+  <div class="logo"><a href="index.html">noumenon</a></div>
+  <nav>
+    <ul>
+      <li><a href="index.html#section1">о галерее</a></li>
+      <li><a href="artists.html">художники</a></li>
+      <li><a href="exhibitions.html">выставки</a></li>
+      <li><a class="active" href="market.html">маркет</a></li>
+      <li><a href="contacts.html">контакты</a></li>
+      <li>
+        <a href="https://t.me/noumenon_gallery" class="tooltip" target="_blank" rel="noopener noreferrer">
+          <span class="tooltip-text">бесплатные билеты в нашем Telegram</span>
+          <img class="icon" src="./images/favicon.png" alt="icon">
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<hr class="header-line">
+
+<div class="floating-nav">
+  <div class="nav-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="12" r="10"></circle>
+      <path d="M16.24 7.76l-2.12 6.36-6.36 2.12 2.12-6.36 6.36-2.12z"></path>
+    </svg>
+  </div>
+  <div class="nav-content">
+    <ul>
+      <li><a href="#section1">Проверка на робота</a></li>
+      <li><a href="#section2">Оформление заказа</a></li>
+      <li><a href="#sectiontop">⇧ Вверх ⇧ </a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="capcha_div" id="section1">
+
+  <h3>Проверка на робота</h3>
+
+  <div class="form-row">
+    <label for="inputA">Введите число A:</label>
+    <input type="number" id="inputA" step="any" required>
+  </div>
+
+  <div class="form-result" id="result"></div>
+
+  <div class="form-buttons"><button type="button" id="calculateBtn" class="form-button">Вычислить X</button></div>
+
+</div>
+
+<form action="https://www.google.com/?hl=ru" method="get" target="_blank" id="section2">
+  <h3>Оформление заказа на картину</h3>
+
+  <label>
+    Название картины:
+    <input type="text" name="painting_title" value="Turmoil" readonly>
+  </label><br>
+
+  <label>
+    Автор:
+    <input type="text" name="author" value="Анна Ксамит" readonly>
+  </label><br>
+
+  <label>
+    Имя:
+    <input type="text" name="first_name" placeholder="Введите имя" required>
+  </label><br>
+
+  <label>
+    Фамилия:
+    <input type="text" name="last_name" placeholder="Введите фамилию" required>
+  </label><br>
+
+  <label>
+    Отчество:
+    <input type="text" name="middle_name" placeholder="Введите отчество">
+  </label><br>
+
+  <label>
+    Контактный номер телефона:
+    <input type="tel" name="phone" pattern="^\+?\d{7,15}$" placeholder="+79XXXXXXXXXX" required>
+  </label><br>
+
+  <label>
+    Адрес электронной почты:
+    <input type="email" name="email" placeholder="you@example.com" required>
+  </label><br>
+
+  <label>
+    Дата встречи:
+    <input type="date" name="meeting_date" required>
+  </label><br>
+
+  <label>
+    Чаевые для художника (₽):
+    <input type="number" name="tips" value="0" min="0" step="1000">
+  </label><br>
+
+  <fieldset>
+    <legend>Предпочтительный способ связи:</legend>
+    <label class="checker"><input type="radio" name="contact_type" value="phone" checked> Телефон</label>
+    <label class="checker"><input type="radio" name="contact_type" value="email"> Электронная почта</label>
+  </fieldset><br>
+
+  <label>
+    Код подтверждения от художника:
+    <input type="password" name="artist_code" placeholder="Введите код" required>
+  </label><br>
+
+  <label for="delivery_type">Выберите тип доставки:
+  <select id="delivery_type" name="delivery_type" required>
+    <option value="">Выберите</option>
+    <option value="courier">Курьер</option>
+    <option value="post">Почта</option>
+    <option value="pickup">Самовывоз</option>
+  </select></label><br>
+
+  <label class="checker">
+    <input type="checkbox" name="agree" required class="input_checker"> Согласен с условиями обработки персональных данных
+  </label><br>
+
+  <input type="hidden" name="form_type" value="painting_order">
+
+  <div class="form-buttons">
+    <button type="submit" class="form-button">Отправить</button>
+    <button type="reset" class="form-button">Сбросить</button>
+  </div>
+</form>
+
+<hr class="footer-line">
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="logo"><a href="index.html">&copy; noumenon</a></div>
+    <p>Сайт вляется учебным проектом и не претендует на авторские права используемых материалов</p>
+  </div>
+</footer>
+
+<script src="./js/task.js"></script>
+
+</body>
+
+</html>
