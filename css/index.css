@@ -547,19 +547,23 @@ td a {
 /* =========================== EXHIBITIONS ============================ */
 
 .exhibitions {
+    width: 40%;
+    margin: 0px auto;
     padding: 15px 80px;
 }
 
 /* =========================== ARTISTS ================================= */
 
 .artists {
+    width: 38%;
+    margin: 0px auto;
     padding: 15px 80px;
 }
 
 /*=========================== FORM ==================================== */
 
 form {
-    width: 40%;
+    width: 38%;
     margin: 30px auto;
     
 }
