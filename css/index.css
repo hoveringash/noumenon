@@ -513,11 +513,13 @@ table {
 
 .table-background {
     background-image: url('../images/мазки.jpg');
+    background-size: cover;
+    background-position: center;
     color: #ffffff;
 }
 
 th, td {
-    border: 1px solid #dedede;
+    border: 1px solid rgba(0, 0, 0, 0);
     padding: 10px;
     text-align: center;
 }
@@ -640,4 +642,33 @@ fieldset {
 
 .form-result {
     margin: 5px 0px;
+}
+
+/* ===== Эффект наведения и анимация увеличения картин ===== */
+
+table img {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+table img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Плавное появление увеличенного изображения */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal-content {
+    animation: zoomIn 0.3s ease;
 }
