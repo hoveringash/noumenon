@@ -2,30 +2,30 @@ let isEnglish = false;
 
 const russianTexts = {
     text1: "ТП УМФС РОССИИ ПО РЕСПУБЛИКЕ КРЫМ\nВ П. ЛИВАДИЯ",
-    text2: "01.01.2020",
+    text2: "24.02.2020",
     text3: "666-999",
-    text4: "ПОМФИЛОВНА",
+    text4: "ДАВЛАТАФЗАТОВНА",
     text5: "АГАТА",
-    text6: "ЛЮДВИГ",
+    text6: "КРИСТИАН",
     text7: "Ж",
-    text8: "01.01.0001",
-    text9: "Г. ЧАЙХОНА",
-    text10: "14  88   193945",
-    text11: "14  88   193945"
+    text8: "30.02.0001",
+    text9: "Г. КРИВОЙ РОГ",
+    text10: "14  87   193945",
+    text11: "14  87   193945"
 };
 
 const englishTexts = {
-    text1: "Federal Migration Service of Russia, Republic of Crimea\nIn Livadia village",
-    text2: "01.01.2020",
+    text1: "FEDERAL MIGRATION SERVICE OF RUSSIA,\nREPUBLIC OF CRIMEA, LIVADIA VILLAGE",
+    text2: "24.02.2022",
     text3: "666-999",
-    text4: "Pomfilovna",
-    text5: "Agata",
-    text6: "Lyudvig",
+    text4: "DAVLATAFZATOVNA",
+    text5: "AGATA",
+    text6: "CHRISTIAN",
     text7: "F",
-    text8: "01.01.0001",
-    text9: "City: Chayhona",
-    text10: "14  88   193945",
-    text11: "14  88   193945"
+    text8: "30.02.0001",
+    text9: "C. KRIVOY ROG",
+    text10: "14  87   193945",
+    text11: "14  87   193945"
 };
 
 function toggleLanguage() {
